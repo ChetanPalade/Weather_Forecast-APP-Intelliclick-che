@@ -84,8 +84,8 @@ const CitiesTable = () => {
         /* console.log("filterCity",filterCity) */
    
 
-    const handleRightClick = (e,cityName) => {
-        if(e.button == 2){
+    const handleRightClick = (event,cityName) => {
+        if(e.button === 2){
             window.open(`/weather/${cityName}`, "_blank")
         }
     }
@@ -166,7 +166,7 @@ const CitiesTable = () => {
                                 {(filterCities,cities).map((city,index) =>(
                                     <tr className="hover:bg-gray-100 dark:hover:bg-neutral-700" key={index}>
                                     <td className="px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200 
-                                    cursor-pointer" onContextMenu={(e) =>handleRightClick(e,city.name)}>
+                                    cursor-pointer" onContextMenu={(event) =>handleRightClick(event,city.name)}>
                                         <Link to={`/weather/${city.name}`}>
                                         {city.name}
                                         </Link>
