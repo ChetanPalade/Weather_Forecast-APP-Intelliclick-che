@@ -62,7 +62,7 @@ const ForeCast = () => {
             loading?(
                 <p>Fetching....</p>
             ):(
-                <div className='flex xl:gap-5 p-4 flex-row xl:flex:row'>
+                <div className='flex xl:gap-5 p-4 flex-col xl:flex:row'>
                     {
                     forecastData.map((day,index)=>{
                        let weatherIcons;
