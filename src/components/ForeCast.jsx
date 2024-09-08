@@ -62,7 +62,7 @@ const ForeCast = () => {
             loading?(
                 <p>Fetching....</p>
             ):(
-                <div className='flex xl:gap-5 p-4 flex-col xl:flex:row'>
+                <div className='flex xl:gap-6 p-6 flex-col xl:flex:row'>
                     {
                     forecastData.map((day,index)=>{
                        let weatherIcons;
@@ -78,7 +78,7 @@ const ForeCast = () => {
                         const foreCastDate = date.toLocaleDateString("en-Us", {weekday: "long", year:"numeric", month:"long",day:"numeric"})
 
                        return (
-                        <div key={index} className='flex p-2 flex-col xl:gap-2 rounded items-center text-gray box-shadow-200 bg-slate-300 '>
+                        <div key={index} className='flex p-4 flex-col xl:gap-2 rounded items-center text-gray box-shadow-200 bg-slate-300 '>
                             <p className='font-semibold'>{foreCastDate}</p>
                             <img src={weatherIcons} alt='' className='w-[40px]'/>
                             <p className='font-semibold'>Max Temp.{(day.main.temp_max-273.15).toFixed(2)}°c</p>
