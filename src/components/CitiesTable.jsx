@@ -92,7 +92,7 @@ const CitiesTable = () => {
    // console.log("filter state",filterCity)
 
   return (
-    <div className='p-2 min-h-screen  bg-gray-500'>
+    <div className='p-2 min-h-screen sm:flex-row xl:flex-col justify-center bg-gray-500'>
     <div className='container mx-10 mt-20 border rounded-lg bg-gray-400'>
         <h2 className="text-center p-2 text-3xl font-bold mb-4">Cities Table</h2>
      <div className="flex flex-row justify-center  my-6" > 
