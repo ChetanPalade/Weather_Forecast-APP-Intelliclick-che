@@ -14,7 +14,7 @@ const ForeCast = () => {
     const [forecastData, setForecastData] = useState([])
     const [loading,setLoading] = useState(true)
 
-    const [foreCastIcons, setForecastIcons] = useState(SunnyIcon)
+    //const [foreCastIcons, setForecastIcons] = useState(SunnyIcon)
 
 
     const {cityName} = useParams()
@@ -35,24 +35,24 @@ const ForeCast = () => {
       },[cityName]);
 
        
-      useEffect (() => {
-        if(forecastData && forecastData.weather){
-          const foreCastIcons = forecastData.weather[0].main
+      // useEffect (() => {
+      // if(forecastData && forecastData.weather){
+      //   const foreCastIcons = forecastData.weather[0].main
     
-        if(foreCastIcons === "Clouds"){
-            setForecastIcons(CloudIcon)
+      //  if(foreCastIcons === "Clouds"){
+      //     setForecastIcons(CloudIcon)
      
-        } else if (foreCastIcons ==="Rain"){
-            setForecastIcons(RainyIcon)
+      //   } else if (foreCastIcons ==="Rain"){
+      //      setForecastIcons(RainyIcon)
        
-        } else if (foreCastIcons === "Clear"){
-          setForecastIcons(SunnyIcon)
-      
-        }
-        }
+      //   } else if (foreCastIcons === "Clear"){
+      //    setForecastIcons(SunnyIcon)
+       
+       // }
+       // }
     
         
-      },[forecastData])
+      // },[forecastData])
 
 
   return (
