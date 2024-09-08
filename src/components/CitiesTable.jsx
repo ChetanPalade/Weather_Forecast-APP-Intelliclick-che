@@ -14,6 +14,9 @@ const CitiesTable = () => {
     const [currentPage, setCurrentPage] = useState(1)
 
     useEffect(() => {
+         getCitiesData();
+        
+    },[])
       
 
     const getCitiesData = () => {
@@ -34,9 +37,7 @@ const CitiesTable = () => {
             }
         },1000)
     }  
-          getCitiesData();
-        
-    },[])
+         
 
     const handleSearchCity = (event) => {
         setSearchCity(event.target.value)
