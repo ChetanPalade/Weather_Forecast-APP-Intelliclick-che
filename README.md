@@ -1,6 +1,11 @@
 # Weather Forecast APP USing React JS:
 [https://weather-forecast-app-intelliclick-che-pro.onrender.com]
 # SCREENSHOTS:
+
+![image](https://github.com/user-attachments/assets/dadb655a-186a-4318-af04-75abe82df9a8)
+
+![image](https://github.com/user-attachments/assets/3141251c-f575-493c-8b1d-491c7afce542)
+
 ![Screenshot (1125)](https://github.com/user-attachments/assets/4806f730-229d-4904-9ca3-6d0f0393d6cf)
 
 ![Screenshot (1124)](https://github.com/user-attachments/assets/62e76032-b6fa-43a5-ae52-45c75b5506f5)
