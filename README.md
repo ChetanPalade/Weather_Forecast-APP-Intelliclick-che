@@ -1,43 +1,58 @@
-# Getting Started with Create React App
+# Weather Forecast APP USing React JS:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SCREENSHOTS:
+![Screenshot (1125)](https://github.com/user-attachments/assets/4806f730-229d-4904-9ca3-6d0f0393d6cf)
 
-## Available Scripts
+![Screenshot (1124)](https://github.com/user-attachments/assets/62e76032-b6fa-43a5-ae52-45c75b5506f5)
 
-In the project directory, you can run:
+![Screenshot (1136)](https://github.com/user-attachments/assets/a5055aa3-7d50-4fbf-86d8-6a384d208364)
 
-### `npm start`
+![Screenshot (1134)](https://github.com/user-attachments/assets/8fda83b5-5b65-478e-8c23-71081639b1f7)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Screenshot (1137)](https://github.com/user-attachments/assets/43847afd-7793-4176-9386-c4f97bee6054)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Screenshot (1138)](https://github.com/user-attachments/assets/454f073c-97de-4cac-9a07-e0d0fa86119a)
 
-### `npm test`
+![Screenshot (1129)](https://github.com/user-attachments/assets/f2d06ba0-966a-47ad-9b8f-5129cefb46a7)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+i![Screenshot (1123)](https://github.com/user-attachments/assets/683683c3-e9cb-47c9-aa0f-7f2f2f8318ea)
 
-### `npm run build`
+# Display Cites in a table:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Showing all cities in a table format with infinite scroll 
+(use this API to get the city data: https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/api/?disjunctive.cou_name_en&sort=name).
+- The table having columns for city name, country, timezone.
+- Implemented search as you type for this table. Utilised an autocomplete feature to suggest possible locations as users type.
+- Implemented filter and sorting for each column
+- Clicking on the city name should take you to the weather page for this city
+- Right-clicked on the city name and open in the new tab  also opened the weather page for the city but in the new tab.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Weather page:
+- We can reach this page by clicked on the city name in the table section as mentioned in the previous section.
+- Using this  https://openweathermap.org free API to display weather on weather page
+- Displayed information we get from the free API including but not limited to Current weather (temperature, weather description, humidity, wind speed, and atmospheric pressure), forecast (temperature highs and lows, weather descriptions, and precipitation chances), etc.
+- Once weather data is loaded on this page, display basics like day high/low, for the city, on the cities table page as w
 
-### `npm run eject`
+# Features
+Users can search for weather conditions of any city in the world.
+The app displays the current weather conditions, including temperature and weather description.
+The app utilizes the above Weather API to fetch weather data.
+# Technologies & Tools Used
+--> React.js
+--> JavaScript
+ Weather API
+Installation and Usage
+To use this app, you can follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Clone the repository or download the source code.
+-  Open the project in your preferred code editor.
+- Run npm install to install the necessary dependencies.
+- Run npm start to start the development server.
+- Open your browser and navigate to http://localhost:3000 to use the app.
+- To use the app, simply type the name of the city you want to search for in the search bar and press Enter. The app will display the current weather conditions for the searched city.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
