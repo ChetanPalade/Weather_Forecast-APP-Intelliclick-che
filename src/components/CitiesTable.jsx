@@ -62,7 +62,7 @@ const CitiesTable = () => {
 
     //Sorting
 
-        const sortCities = (city) =>{
+        const sorting = (city) =>{
             if (sortCities === "ASC"){
                 const sorted=cities.sort((city) =>
                 city.name.toLowerCase().includes(searchCity.toLowerCase()) > city.name.toLowerCase().includes(searchCity.toLowerCase()) ? 1 : -1
@@ -162,7 +162,7 @@ const CitiesTable = () => {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-200 dark:divide-neutral-700">
-                                {(filterCities,sortCities).map((city,index) =>(
+                                {(filterCities,sorting).map((city,index) =>(
                                     <tr className="hover:bg-gray-100 dark:hover:bg-neutral-700" key={index}>
                                     <td className="px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200 
                                     cursor-pointer" onContextMenu={(e) => handleRightClick(e,city.name)}>
