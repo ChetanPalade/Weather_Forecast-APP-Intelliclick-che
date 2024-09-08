@@ -14,10 +14,9 @@ const CitiesTable = () => {
     const [currentPage, setCurrentPage] = useState(1)
 
     useEffect(() => {
-         getCitiesData();
+        getCitiesData();
         
     },[])
-      
 
     const getCitiesData = () => {
 
@@ -35,9 +34,10 @@ const CitiesTable = () => {
             } catch(error) {
                 console.log("Error Found Sorry For Inconvinience", error)
             }
+       
+        
         },1000)
-    }  
-         
+    }    
 
     const handleSearchCity = (event) => {
         setSearchCity(event.target.value)
@@ -63,7 +63,7 @@ const CitiesTable = () => {
 
     //Sorting
 
-        const sorting = (city) =>{
+        const sorting = (col) =>{
             if (sortCities === "ASC"){
                 const sorted=cities.sort((city) =>
                 city.name.toLowerCase().includes(searchCity.toLowerCase()) > city.name.toLowerCase().includes(searchCity.toLowerCase()) ? 1 : -1
@@ -85,7 +85,7 @@ const CitiesTable = () => {
    
 
     const handleRightClick = (e,cityName) => {
-        if(e.button === 2){
+        if(e.button == 2){
             window.open(`/weather/${cityName}`, "_blank")
         }
     }
@@ -163,10 +163,10 @@ const CitiesTable = () => {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-200 dark:divide-neutral-700">
-                                {(filterCities,sorting).map((city,index) =>(
+                                {(filterCities,cities).map((city,index) =>(
                                     <tr className="hover:bg-gray-100 dark:hover:bg-neutral-700" key={index}>
                                     <td className="px-6 py-3 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200 
-                                    cursor-pointer" onContextMenu={(e) => handleRightClick(e,city.name)}>
+                                    cursor-pointer" onContextMenu={(e) =>handleRightClick(e,city.name)}>
                                         <Link to={`/weather/${city.name}`}>
                                         {city.name}
                                         </Link>
