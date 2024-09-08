@@ -86,7 +86,7 @@ const CitiesTable = () => {
 
     const handleRightClick = (e,cityName) => {
         if(e.button === 2){
-            window.open(`/weather/${cityName}`)
+            window.open(`/weather/${cityName}`, "_blank")
         }
     }
    // console.log("filter state",filterCity)
